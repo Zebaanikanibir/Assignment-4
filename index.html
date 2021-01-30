@@ -124,6 +124,8 @@
 <script>
 
 
+//ticket count...
+
 function countTicket(ticket,isIncrease){
 
 const ticketInput = document.getElementById(ticket + '-Input').value;
@@ -139,6 +141,8 @@ document.getElementById(ticket + '-Input').value = ticketNewCount;
 
 totalTicketPrice();
 } 
+
+//ticket price...
 
 function totalTicketPrice(){
 const firstClassInputNumber = getInputNumber('firstClass');
@@ -161,6 +165,8 @@ const totalPrice = subTotalPrice + taxPrice;
 document.getElementById('total').innerText = totalPrice;
 }
 
+//book now part
+
 function getInputNumber(ticket){
 const ticketInput = document.getElementById(ticket + '-Input').value;
 const ticketInputNumber = parseInt(ticketInput);
@@ -170,24 +176,14 @@ return ticketInputNumber;
   document.getElementById('bookNow').addEventListener('click', function()
 {
     
-    const bookOcean = document.getElementById('bookOcean')
-     bookOcean.style.display = 'none'
-const confirmedArea = document.getElementById('confirmed-area');
-confirmedArea.style.display = 'block';
+ const bookOcean = document.getElementById('bookOcean')
+ bookOcean.style.display = 'none'
+ const confirmedArea = document.getElementById('confirmed-area');
+ confirmedArea.style.display = 'block';
   
-
  })
 
-    
-//    function BookNow(){
 
-
-//     const bookNow = document.getElementById('bookNow')
-//  bookNow.style.display = 'none'
-// const confirmedArea = document.getElementById('confirmed-area');
-// confirmedArea.style.display = 'block';
-
-// }
   
 
 
