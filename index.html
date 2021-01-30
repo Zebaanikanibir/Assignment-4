@@ -157,6 +157,7 @@ const totalNumber = parseInt(total);
 
 const totalPrice = subTotalPrice + taxPrice;
 document.getElementById('total').innerText = totalPrice;
+bookPrice();
 }
 
 function getInputNumber(ticket){
@@ -165,11 +166,17 @@ const ticketInputNumber = parseInt(ticketInput);
 return ticketInputNumber;
 }
 
-  document.getElementById('bookNow').addEventListener('click', function(){ 
-      const bookNow = document.getElementById('bookNow')
+  document.getElementById('bookNow').addEventListener('click', function()
+{
+    
+    const bookNow = document.getElementById('bookNow')
      bookNow.style.display = 'none'
 const confirmedArea = document.getElementById('confirmed-area');
 confirmedArea.style.display = 'block';
+  
+     
+
+
 
  })
 
