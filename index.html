@@ -34,8 +34,13 @@
             <h1>Cruise Queen</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book./p>
         </div>
-
-        <div class="booking-form">
+        <div id="confirmed-area" class="confirmed">
+            <h1 id="thanks">thank you!</h1>
+           <p>Successfully,confirmed your ticket.</p>
+           <p>Happy journey!</p>
+        </div>
+        <div id="bookOcean" class="booking-form">
+        
             <h3>Book Ocean Time</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -107,11 +112,7 @@
                 </div>
             </div>
             <button id="bookNow" class="btn-style">Book Now</button>
-            <div id="confirmed-area" class="confirmed">
-                <h1 id="thanks">thank you!</h1>
-               <p>Successfully,confirmed your ticket.</p>
-               <p>Happy journey!</p>
-            </div>
+            
 
         </div>
         
@@ -169,8 +170,8 @@ return ticketInputNumber;
   document.getElementById('bookNow').addEventListener('click', function()
 {
     
-    const bookNow = document.getElementById('bookNow')
-     bookNow.style.display = 'none'
+    const bookOcean = document.getElementById('bookOcean')
+     bookOcean.style.display = 'none'
 const confirmedArea = document.getElementById('confirmed-area');
 confirmedArea.style.display = 'block';
   
